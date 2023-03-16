@@ -10,6 +10,10 @@ subjects:
   - kind: ServiceAccount
     name: openshift-gitops-argocd-server
     namespace: argocd-dev
+   
+  - kind: ServiceAccount
+    name: openshift-gitops-argocd-server-test
+    namespace: argocd-dev
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
